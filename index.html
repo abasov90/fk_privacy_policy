@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Политика конфиденциальности — FlexKey Keyboard</title>
+  <meta name="description" content="Официальный документ для Google Play Console и пользователей Android-клавиатуры FlexKey Keyboard">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://github.com/flexkey-keyboard/privacy-policy">
+  <!-- Tailwind CSS via CDN for standalone GitHub Pages hosting -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; color: black !important; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased min-h-screen">
+  <!-- Top Navigation Bar -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-xs no-print">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
+          ⌨️
+        </div>
+        <div>
+          <h1 class="text-lg font-bold text-slate-900 leading-tight">FlexKey Keyboard</h1>
+          <p class="text-xs text-slate-500">Политика конфиденциальности</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="window.print()" class="px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-medium text-slate-700 hover:bg-slate-100 transition-colors">
+          Распечатать / PDF
+        </button>
+        <a href="mailto:abasov90@gmail.com" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-medium transition-colors">
+          Написать разработчику
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Notice Header -->
+  <div class="bg-gradient-to-b from-indigo-50/70 to-slate-50 border-b border-slate-200 py-10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-semibold mb-4 border border-emerald-200">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        Соответствует требованиям Google Play Console
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
+        Политика конфиденциальности — FlexKey Keyboard
+      </h1>
+      <p class="text-base text-slate-600 max-w-3xl mb-6">
+        Официальный документ для Google Play Console и пользователей Android-клавиатуры FlexKey Keyboard
+      </p>
+      <div class="flex flex-wrap items-center gap-4 sm:gap-6 text-xs text-slate-500 pt-2 border-t border-slate-200">
+        <div><strong class="text-slate-700">Дата вступления:</strong> 2026-10-03</div>
+        <div><strong class="text-slate-700">Обновлено:</strong> 2026-10-03</div>
+        <div><strong class="text-slate-700">Пакет Android:</strong> <code>com.flexkey.keyboard</code></div>
+        <div><strong class="text-slate-700">Разработчик:</strong> FlexKey</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Body Content -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      
+      <!-- Table of Contents (Sticky on desktop) -->
+      <aside class="hidden lg:block lg:col-span-4 no-print">
+        <div class="sticky top-24 bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">
+            Содержание документа
+          </h3>
+          <nav class="space-y-1 text-sm">
+            
+              <a href="#intro" class="block py-1.5 px-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-colors font-medium text-xs leading-normal">
+                1. Общие положения и идентификация разработчика
+              </a>
+            
+
+              <a href="#no-keystrokes" class="block py-1.5 px-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-colors font-medium text-xs leading-normal">
+                2. Категорический запрет на запись и сбор нажатий клавиш (No Keystroke Logging)
+              </a>
+            
+
+              <a href="#android-system-warning" class="block py-1.5 px-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-colors font-medium text-xs leading-normal">
+                3. Разъяснение системного предупреждения Android при активации клавиатуры
+              </a>
+            
+
+              <a href="#data-collection" class="block py-1.5 px-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-colors font-medium text-xs leading-normal">
+                4. Данные, обрабатываемые приложением
+              </a>
+            
+
+              <a href="#permissions" class="block py-1.5 px-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-colors font-medium text-xs leading-normal">
+                5. Запрашиваемые системные разрешения Android и их назначение
+              </a>
+            
+
+              <a href="#third-party" class="block py-1.5 px-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-colors font-medium text-xs leading-normal">
+                6. Взаимодействие с третьими лицами и передача данных
+              </a>
+            
+
+              <a href="#user-rights" class="block py-1.5 px-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-colors font-medium text-xs leading-normal">
+                7. Права пользователя и управление данными (Удаление данных)
+              </a>
+            
+
+              <a href="#children" class="block py-1.5 px-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-colors font-medium text-xs leading-normal">
+                8. Защита конфиденциальности детей (COPPA / GDPR-K)
+              </a>
+            
+
+              <a href="#security" class="block py-1.5 px-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-colors font-medium text-xs leading-normal">
+                9. Меры по обеспечению безопасности данных
+              </a>
+            
+
+              <a href="#changes" class="block py-1.5 px-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-colors font-medium text-xs leading-normal">
+                10. Изменения и обновления Политики конфиденциальности
+              </a>
+            
+
+              <a href="#contacts" class="block py-1.5 px-2 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 transition-colors font-medium text-xs leading-normal">
+                11. Контактная информация разработчика
+              </a>
+            
+          </nav>
+
+          <div class="mt-6 pt-5 border-t border-slate-100">
+            <h4 class="text-xs font-bold text-slate-900 mb-2">Служба поддержки</h4>
+            <p class="text-xs text-slate-500 mb-3">Вопросы по безопасности и политике данных:</p>
+            <a href="mailto:abasov90@gmail.com" class="block text-xs font-medium text-indigo-600 hover:underline break-all">
+              abasov90@gmail.com
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Document Content -->
+      <article class="lg:col-span-8 bg-white p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-xs">
+        <!-- Keystroke Security Callout -->
+        <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 mb-8 flex items-start gap-3">
+          <div class="text-2xl">🛡️</div>
+          <div>
+            <h4 class="text-sm font-bold text-emerald-900">
+              Гарантия конфиденциальности ввода
+            </h4>
+            <p class="text-xs sm:text-sm text-emerald-800 mt-1 leading-relaxed">
+              Приложение «FlexKey Keyboard» не перехватывает, не сохраняет и не передает нажимаемые клавиши, пароли, переписку или реквизиты карт. Обработка текста производится локально в оперативной памяти устройства.
+            </p>
+          </div>
+        </div>
+
+        
+      <section id="intro" class="py-6 border-b border-slate-200 scroll-mt-20">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">1. Общие положения и идентификация разработчика</h2>
+          <span class="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full border bg-blue-100 text-blue-800 border-blue-200">Официальный документ</span>
+        </div>
+        <div class="text-slate-700 leading-relaxed whitespace-pre-line text-base">
+          Настоящая Политика конфиденциальности (далее — «Политика») определяет порядок сбора, обработки, хранения и защиты информации пользователей при установке и использовании приложения экранной клавиатуры «FlexKey Keyboard» (пакет приложения: com.flexkey.keyboard), разработанного FlexKey (далее — «Разработчик», «мы», «наш»).
+        
+Мы со всей ответственностью относимся к праву пользователей на тайну личной переписки и неприкосновенность частной жизни. Клавиатура «FlexKey Keyboard» спроектирована по принципу «Privacy-by-Design» (конфиденциальность по умолчанию).
+        </div>
+        <ul class="list-disc pl-6 space-y-2 mt-3 text-slate-700">
+        <li>Наименование приложения: FlexKey Keyboard</li>
+<li>Пакет (Package Name): com.flexkey.keyboard</li>
+<li>Разработчик: FlexKey</li>
+<li>Контактный адрес электронной почты: abasov90@gmail.com</li>
+<li>Дата вступления в силу: 2026-10-03</li>
+      </ul>
+        
+      </section>
+    
+
+      <section id="no-keystrokes" class="py-6 border-b border-slate-200 scroll-mt-20">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">2. Категорический запрет на запись и сбор нажатий клавиш (No Keystroke Logging)</h2>
+          <span class="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full border bg-emerald-100 text-emerald-800 border-emerald-200">100% Защита ввода</span>
+        </div>
+        <div class="text-slate-700 leading-relaxed whitespace-pre-line text-base">
+          Ключевой принцип работы «FlexKey Keyboard» — абсолютная изоляция вводимого текста:
+        
+Разработчик заявляет и гарантирует, что приложение «FlexKey Keyboard» НЕ ОСУЩЕСТВЛЯЕТ перехват, логирование, скрытую запись, сохранение или передачу текста, вводимого пользователем.
+        </div>
+        <ul class="list-disc pl-6 space-y-2 mt-3 text-slate-700">
+        <li>Пароли, PIN-коды, реквизиты банковских карт и CVC/CVV коды никогда не сохраняются и не логируются.</li>
+<li>Личные сообщения, переписка в мессенджерах, поисковые запросы и адреса электронной почты не передаются разработчику или третьим лицам.</li>
+<li>Алгоритмы автоисправления (autocorrect), подсказки следующих слов и предиктивный ввод функционируют исключительно локально на вашем устройстве в изолированной оперативной памяти (RAM).</li>
+<li>Приложение работает полностью в автономном режиме (offline-first) и физически лишено возможности выхода в сеть Интернет.</li>
+      </ul>
+        
+      </section>
+    
+
+      <section id="android-system-warning" class="py-6 border-b border-slate-200 scroll-mt-20">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">3. Разъяснение системного предупреждения Android при активации клавиатуры</h2>
+          <span class="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full border bg-amber-100 text-amber-800 border-amber-200">Важная справка системы Android</span>
+        </div>
+        <div class="text-slate-700 leading-relaxed whitespace-pre-line text-base">
+          При включении «FlexKey Keyboard» в настройках Android система отображает стандартное системное предупреждение:
+        
+«Этот метод ввода может собирать весь вводимый вами текст, включая личные данные, такие как пароли и номера кредитных карт...»
+        
+Данное уведомление является стандартным системным предупреждением безопасности операционной системы Android для ВСЕХ сторонних клавиатур (Input Method Editors — IME), установленных пользователем. Данное предупреждение выводится системой независимо от того, собирает клавиатура данные или нет.
+        
+Мы подтверждаем, что приложение «FlexKey Keyboard» не использует технические возможности ввода для перехвата или передачи каких-либо персональных данных.
+        </div>
+        
+        
+      </section>
+    
+
+      <section id="data-collection" class="py-6 border-b border-slate-200 scroll-mt-20">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">4. Данные, обрабатываемые приложением</h2>
+          <span class="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full border bg-blue-100 text-blue-800 border-blue-200">Локальное хранение</span>
+        </div>
+        <div class="text-slate-700 leading-relaxed whitespace-pre-line text-base">
+          Приложение «FlexKey Keyboard» минимизирует объем сохраняемой информации до технически необходимого минимума для функционирования интерфейса:
+        </div>
+        <ul class="list-disc pl-6 space-y-2 mt-3 text-slate-700">
+        <li>Настройки клавиатуры: выбранная тема оформления, высота клавиш, громкость звука и интенсивность виброотклика сохраняются исключительно локально во внутреннем изолированном хранилище приложения (SharedPreferences / SQLite).</li>
+<li>Пользовательский словарь и добавленные слова: слова, которые вы добавляете в словарь для быстрого ввода, сохраняются локально на устройстве в защищенной песочнице приложения и могут быть очищены в любой момент через настройки.</li>
+<li>Буфер обмена (Clipboard Manager): при активации встроенного менеджера буфера обмена скопированные фрагменты текста хранятся локально во временной памяти устройства для удобства вставки. История буфера обмена никогда не передается по сети и может быть полностью очищена пользователем в один клик.</li>
+<li>Приложение не использует сторонние телеметрические трекеры или аналитические системы сбора поведения.</li>
+<li>Приложение полностью свободно от рекламы (No Ads), рекламных трекеров и межсайтовых идентификаторов (AdID).</li>
+      </ul>
+        
+      </section>
+    
+
+      <section id="permissions" class="py-6 border-b border-slate-200 scroll-mt-20">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">5. Запрашиваемые системные разрешения Android и их назначение</h2>
+          <span class="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full border bg-blue-100 text-blue-800 border-blue-200">Разрешения строго по назначению</span>
+        </div>
+        <div class="text-slate-700 leading-relaxed whitespace-pre-line text-base">
+          Приложение запрашивает только минимальный набор системных разрешений, строго обусловленный пользовательскими функциями клавиатуры:
+        </div>
+        
+        <div class="overflow-x-auto mt-4">
+        <table class="w-full text-left text-sm border-collapse border border-slate-200">
+          <thead>
+            <tr class="bg-slate-100 text-slate-900 border-b border-slate-200">
+              <th class="p-3 font-semibold">Разрешение Android</th>
+              <th class="p-3 font-semibold">Назначение</th>
+              <th class="p-3 font-semibold">Статус</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr class="border-b border-slate-200 hover:bg-slate-50">
+                <td class="p-3 font-mono text-xs text-indigo-700 font-semibold">android.permission.VIBRATE</td>
+                <td class="p-3 text-slate-700">Обеспечение тактильного виброотклика при нажатии клавиш (настраивается в параметрах приложения).</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded text-xs font-medium bg-slate-200 text-slate-800">Optional</span></td>
+              </tr>
+            
+
+              <tr class="border-b border-slate-200 hover:bg-slate-50">
+                <td class="p-3 font-mono text-xs text-indigo-700 font-semibold">android.permission.RECORD_AUDIO</td>
+                <td class="p-3 text-slate-700">Используется исключительно при активации функции голосового ввода. Обработка речи выполняется встроенной системной службой Android SpeechRecognizer. Аудиозаписи никогда не сохраняются на накопителе и не отправляются на сторонние серверы FlexKey.</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded text-xs font-medium bg-slate-200 text-slate-800">Optional</span></td>
+              </tr>
+            
+
+              <tr class="border-b border-slate-200 hover:bg-slate-50">
+                <td class="p-3 font-mono text-xs text-indigo-700 font-semibold">android.permission.READ_USER_DICTIONARY / WRITE_USER_DICTIONARY</td>
+                <td class="p-3 text-slate-700">Доступ к пользовательскому словарю Android для добавления новых пользовательских слов и подсказок при вводе.</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded text-xs font-medium bg-slate-200 text-slate-800">Optional</span></td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      </section>
+    
+
+      <section id="third-party" class="py-6 border-b border-slate-200 scroll-mt-20">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">6. Взаимодействие с третьими лицами и передача данных</h2>
+          <span class="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full border bg-emerald-100 text-emerald-800 border-emerald-200">Без передачи третьим лицам</span>
+        </div>
+        <div class="text-slate-700 leading-relaxed whitespace-pre-line text-base">
+          Разработчик не продает, не сдает в аренду, не распространяет и не передает данные пользователей третьим сторонам, маркетинговым агентствам или брокерам данных.
+        
+Единственные допустимые технические интеграции:
+- Google Play Services (для обработки покупки Pro-версии или стандартной установки из каталога Google Play);
+- Встроенные системные службы Android (SpeechRecognizer для распознавания речи при нажатии микрофона).
+        </div>
+        
+        
+      </section>
+    
+
+      <section id="user-rights" class="py-6 border-b border-slate-200 scroll-mt-20">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">7. Права пользователя и управление данными (Удаление данных)</h2>
+          <span class="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full border bg-blue-100 text-blue-800 border-blue-200">Полный контроль</span>
+        </div>
+        <div class="text-slate-700 leading-relaxed whitespace-pre-line text-base">
+          Каждый пользователь имеет полный контроль над любыми данными, сохраненными локально:
+        </div>
+        <ul class="list-disc pl-6 space-y-2 mt-3 text-slate-700">
+        <li>Очистка истории обучения и словаря: в настройках «${config.appName}» доступна кнопка «Очистить пользовательские слова» / «Сбросить данные обучения».</li>
+<li>Полное удаление: при удалении приложения «${config.appName}» через системные настройки Android все локальные файлы, настройки и словари удаляются операционной системой безвозвратно.</li>
+<li>Запросы на разъяснение: вы вправе направить любой запрос относительно обработки данных на адрес электронной почты abasov90@gmail.com. Ответ предоставляется в течение 3 рабочих дней.</li>
+      </ul>
+        
+      </section>
+    
+
+      <section id="children" class="py-6 border-b border-slate-200 scroll-mt-20">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">8. Защита конфиденциальности детей (COPPA / GDPR-K)</h2>
+          <span class="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full border bg-blue-100 text-blue-800 border-blue-200">Детская безопасность</span>
+        </div>
+        <div class="text-slate-700 leading-relaxed whitespace-pre-line text-base">
+          Приложение «FlexKey Keyboard» не предназначено специально для сбора личной информации у детей в возрасте до 13 лет (или соответствующего возраста совершеннолетия в вашей юрисдикции). Мы намеренно не собираем и не храним личные данные несовершеннолетних пользователей.
+        </div>
+        
+        
+      </section>
+    
+
+      <section id="security" class="py-6 border-b border-slate-200 scroll-mt-20">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">9. Меры по обеспечению безопасности данных</h2>
+          <span class="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full border bg-emerald-100 text-emerald-800 border-emerald-200">Песочница Android Sandbox</span>
+        </div>
+        <div class="text-slate-700 leading-relaxed whitespace-pre-line text-base">
+          Безопасность данных обеспечивается стандартной архитектурой безопасности Android:
+        
+1. Приложение изолировано в индивидуальной песочнице Android (Application Sandbox UID), защищающей его данные от чтения другими установленными приложениями.
+2. Отсутствие скрытых фоновых сетевых служб.
+3. Соблюдение актуальных политик безопасности Google Play Developer Policies.
+        </div>
+        
+        
+      </section>
+    
+
+      <section id="changes" class="py-6 border-b border-slate-200 scroll-mt-20">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">10. Изменения и обновления Политики конфиденциальности</h2>
+          
+        </div>
+        <div class="text-slate-700 leading-relaxed whitespace-pre-line text-base">
+          Разработчик оставляет за собой право вносить изменения в настоящую Политику для соответствия обновленным требованиям Google Play, законодательства или новым функциям приложения. Актуальная версия Политики всегда доступна по постоянному адресу в сети Интернет. Дата последнего обновления указана в начале и конце документа.
+        </div>
+        
+        
+      </section>
+    
+
+      <section id="contacts" class="py-6 border-b border-slate-200 scroll-mt-20">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">11. Контактная информация разработчика</h2>
+          <span class="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full border bg-blue-100 text-blue-800 border-blue-200">Связь с разработчиком</span>
+        </div>
+        <div class="text-slate-700 leading-relaxed whitespace-pre-line text-base">
+          Если у вас есть вопросы, предложения или претензии относительно настоящей Политики конфиденциальности или безопасности приложения «FlexKey Keyboard», пожалуйста, свяжитесь с нами:
+        </div>
+        <ul class="list-disc pl-6 space-y-2 mt-3 text-slate-700">
+        <li>Разработчик / Правообладатель: FlexKey</li>
+<li>Электронная почта для обращений: abasov90@gmail.com</li>
+<li>Пакет приложения в Google Play: com.flexkey.keyboard</li>
+<li>Репозиторий / Веб-сайт: https://github.com/flexkey-keyboard/privacy-policy</li>
+<li>Срок ответа на официальные обращения: до 3 рабочих дней</li>
+      </ul>
+        
+      </section>
+    
+
+        <footer class="mt-10 pt-6 border-t border-slate-200 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p>© 2026 FlexKey. Все права защищены.</p>
+          <p>Размещено для Google Play Console</p>
+        </footer>
+      </article>
+
+    </div>
+  </main>
+</body>
+</html>
